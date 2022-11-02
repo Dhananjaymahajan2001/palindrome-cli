@@ -1,10 +1,22 @@
 import "./styles.css";
 
-document.getElementById("app").innerHTML = `
-<h1>Hello Vanilla!</h1>
-<div>
-  We use the same configuration as Parcel to bundle this sandbox, you can find more
-  info about Parcel 
-  <a href="https://parceljs.org" target="_blank" rel="noopener noreferrer">here</a>.
-</div>
-`;
+function validatePalin(str) {
+  // get the total length of the words
+  const len = string.length;
+
+  // Use for loop to divide the words into 2 half
+  for (let i = 0; i < len / 2; i++) {
+    // validate the first and last characters are same
+    if (string[i] !== string[len - 1 - i]) {
+      alert("It is not a palindrome");
+    }
+  }
+  alert("It is a palindrome");
+}
+
+// accept the string or number from the prompt
+const string = prompt("Enter a string or number: ");
+
+const value = validatePalin(string);
+
+console.log(value);
